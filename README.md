@@ -1,5 +1,7 @@
 # FineSurE: Fine-grained Summarization Evaluation using LLMs (ACL'23-main, Long Paper)
 
+Here is our paper on arXiv: [[link](https://arxiv.org/abs/2407.00908)]
+
 The structure of the projects:
 - dataset: FRANK and REALSumm (in JSON format) are located in this folder
 - reproduce: the code to reproduce the results of FineSurE in Table 1 and Table 2 
