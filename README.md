@@ -34,3 +34,16 @@ Runnining Command:
 2) python finesure/keyfact-alignment.py [input-path] [keyfact-path] [output-folder]
 
 e.g., python finesure/keyfact-alignment.py dataset/realsumm/realsumm-data-sample-10.json dataset/realsumm/human-keyfact-list.json result/keyfact-alignment
+
+## Citation
+
+Please consider citation if our paper is useful in your research.
+
+```BibTeX
+@inproceedings{song2024finesure,
+  title={FineSurE: Fine-grained Summarization Evaluation using LLMs},
+  author={Song, Hwanjun and Su, Hang and Shalyminov, Igor and Cai, Jason and Mansour, Saab},
+  booktitle={ACL},
+  year={2024}
+}
+```
