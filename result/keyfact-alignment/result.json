@@ -1,0 +1,22 @@
+
+
+
+[Evaluation Results]
+
+* completeness score per model (higher is better)
+unilm_out_v2	45.5%
+t5_out_large	59.0%
+
+* completeness model ranking (left is better)
+['t5_out_large', 'unilm_out_v2']
+
+* conciseness score per model (higher is better)
+unilm_out_v2	76.0%
+t5_out_large	81.7%
+
+* conciseness model ranking (left is better)
+['t5_out_large', 'unilm_out_v2']
+
+* success rate: 100.0%
+
+
