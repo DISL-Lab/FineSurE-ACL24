@@ -1,17 +1,24 @@
-This is the source code for the paper titled "FineSurE: Fine-grained Summarization Evaluation using LLMs"
+# FineSurE: Fine-grained Summarization Evaluation using LLMs (ACL'23-main, Long Paper)
 
 The structure of the projects:
-- dataset: frank and realsumm (in JSON format) are located in this folder
+- dataset: FRANK and REALSumm (in JSON format) are located in this folder
 - reproduce: the code to reproduce the results of FineSurE in Table 1 and Table 2 
 - finesure: the code to run our FineSurE method to evaluate the summary generated from language models
 
+### Reproduce the Results
+
+Runnining Command:
+
+1) cd CodeRelease/reproduce
+
+2) python reproduce-main-results.py results/frank-result-by-gpt4-w-finesure.json results/realsumm-result-by-gpt4-w-finesure.json
+
+
 ### Running FineSure on model summareis
 
-We create sample datasets with an example for fact-checking and keyfact-alignment tasks, respectively. The data is a synthetic toy example here, only providing the information on what format you use. 
+We create sample datasets with 10 examples for fact-checking and keyfact-alignment tasks, respectively.
 
-Please replace the <openai api key> with your api key in finesure/fact-checking.py and finesure/keyfact-alignmnet.py.
-
-The LLM backbone is set to be GPT-4o by default.
+Please replace the <openai api key> with your api key.
 
 Runnining Command:
 1) cd CodeRelease
