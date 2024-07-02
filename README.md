@@ -43,6 +43,54 @@ python finesure/keyfact-alignment.py [input-path] [keyfact-path] [output-folder]
 python finesure/keyfact-alignment.py dataset/realsumm/realsumm-data-sample-10.json dataset/realsumm/human-keyfact-list.json result/keyfact-alignment
 ```
 
+#### Logs:
+
+The results are saved in the result directory. See the results on examples below:
+
+* Fact Checking Task:
+```bash 
+[Evaluation Results]
+* sentence-level factuality error ratio per model (lower is better)
+bert_sum	0.0%
+bus	33.3%
+pgn	16.7%
+s2s	83.3%
+bart	33.3%
+
+* summary-level faithfulness score per model (higher is better)
+bert_sum	100.0%
+bus	66.7%
+pgn	83.3%
+s2s	16.7%
+bart	75.0%
+
+* system-level model ranking (left is better)
+['bert_sum', 'pgn', 'bart', 'bus', 's2s']
+
+* success rate: 100.0%
+```
+
+* Keyfact Alignment Task:
+```bash 
+[Evaluation Results]
+
+* completeness score per model (higher is better)
+unilm_out_v2	45.5%
+t5_out_large	59.0%
+
+* completeness model ranking (left is better)
+['t5_out_large', 'unilm_out_v2']
+
+* conciseness score per model (higher is better)
+unilm_out_v2	76.0%
+t5_out_large	81.7%
+
+* conciseness model ranking (left is better)
+['t5_out_large', 'unilm_out_v2']
+
+* success rate: 100.0%
+```
+
 ## Reproduce the Main Table of the Paper
 
 ```bash
