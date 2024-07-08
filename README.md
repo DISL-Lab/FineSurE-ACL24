@@ -1,4 +1,4 @@
-# FineSurE: Fine-grained Summarization Evaluation using LLMs (ACL'23-main, Long Paper)
+# FineSurE: Fine-grained Summarization Evaluation using LLMs (ACL'24-main, Long Paper)
 
 Here is our paper on arXiv: [[link](https://arxiv.org/abs/2407.00908)]
 
